@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <button class="button_su" onclick="goBack()">Go Back</button>
+    <p>Notice that clicking on the back button here will redirect you to the previous page</p>
+
+    <script>
+        function goBack(){
+            window.history.back();
+        }
+        alert(location.href);
+        if(confirm("Want to visit  instagram ? ")){
+            location.href = "https://www.instagram.com";
+        }
+    </script>
+</body>
+</html>
